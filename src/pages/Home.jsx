@@ -1,6 +1,6 @@
-// src/pages/Home.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
+import profilePic from '../assets/profile.jpg'; // Adjust to hero.png if you prefer that image
 
 export default function Home() {
   return (
@@ -9,6 +9,14 @@ export default function Home() {
         <h1>Welcome to My Portfolio</h1>
         <p className="subtitle">Software Engineering Technology Student & Full-Stack Developer</p>
         
+        {/* Profile / Hero Picture */}
+        <img 
+          src={profilePic} 
+          alt="Mikias Haile" 
+          className="hero-image"
+          style={{ width: '160px', height: '160px', borderRadius: '50%', objectFit: 'cover', margin: '20px 0' }}
+        />
+
         {/* Mission Statement required by Assignment 1 */}
         <div className="mission-box">
           <h2>Mission Statement</h2>
